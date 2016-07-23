@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+    
+
+{% block head %}    
+
+    {% block title %} Skills-HTML-CSS{% endblock %}
+    <h1>Career Builder</h1> 
+    <h2>Find the right job. Right now.</h2>
+
+{% endblock %}
+
+
+
+{% block content %}
+    <fieldset>
+        <legend>Please fill the form below</legend>
+        <div class="container">
+            
+            <form action="/application" method="POST">
+                
+                <label for="firstname">First Name:</label>
+                <input id="firstname", type="text", name="firstname" placeholder='First name'><br>
+                <br>
+
+                <label for="lastname"><strong>Last Name:</strong></label>
+                <input id="lastname", type="text", name="lastname" placeholder='Last name'><br><br>
+                
+                
+                <label for="salary">Expected Salary:</label>
+                <input id="salary", type="text", name="salary" placeholder='Salary'><br><br>
+                
+                
+                <label for="jobskills">Select the job you want to apply for
+                </label>
+
+                <select id="jobskills" name="select">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Enginner">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                </select>
+
+             </div>
+
+                 <br><br><input id= "#submit-button" type="submit" name="textfield" value="Submit">
+
+            </form>
+       
+    </fieldset>
+
+{% endblock %}

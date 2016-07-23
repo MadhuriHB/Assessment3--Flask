@@ -1,0 +1,27 @@
+/* Your CSS goes here */
+
+h1, h2 {
+
+    text-align: center;
+}
+
+.container {
+
+    width: 400px;
+    clear: both;
+
+}
+
+.container input {
+
+    width: 100%;
+    clear: both;
+    background-color: yellow;
+
+}
+
+#submit-button {
+
+    background-color: yellow;
+    
+}
